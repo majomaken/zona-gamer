@@ -1,0 +1,107 @@
+.news-card {
+  margin: 2rem;
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-medium);
+  transition: all 300ms ease;
+  border: 1px solid rgba(255, 225, 255, 0.1);
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.news-card:nth-child(even) {
+  animation-delay: 0.2s;
+}
+
+.news-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-large);
+  border-color: var(--primary-color);
+}
+
+.card-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-image img, .card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.news-card:hover .card-image img,
+.news-card:hover .card-img {
+  transform: scale(1.1);
+}
+
+.card-overlay {
+  position: absolute;
+  top: var(--spacing-md);
+  left: var(--spacing-md);
+}
+
+.card-category {
+  background: rgba(0, 0, 0, 0.8);
+  color: var(--text-primary);
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card-content {
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  height: auto;
+}
+
+.card-content h3,
+.card-title {
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-md);
+  font-size: 1.2rem;
+  line-height: 1.3;
+  flex-shrink: 0;
+}
+
+.card-content p,
+.card-description {
+  color: var(--text-muted);
+  margin-bottom: var(--spacing-md);
+  flex-grow: 1;
+  font-size: 0.95rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: var(--spacing-sm);
+  flex-shrink: 0;
+  border-top: 1px solid rgba(225, 255, 255, 0.1);
+}
+
+.card-date {
+  font-size: 0.8rem;
+  color: var(--text-dark);
+}
+
+@media (max-width: 480px) {
+  .card-content {
+    padding: var(--spacing-md);
+    height: auto;
+  }
+}
