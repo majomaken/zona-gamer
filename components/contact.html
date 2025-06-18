@@ -1,0 +1,71 @@
+<section id="contacto" class="contact-section">
+  <div class="section-header">
+    <h2>💬 Contáctanos</h2>
+    <p>¿Tienes alguna sugerencia o quieres colaborar con nosotros?</p>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-info">
+      <div class="info-card">
+        <div class="info-icon">📧</div>
+        <h3>Email</h3>
+        <p>contacto@zonagamer.com</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">🐦</div>
+        <h3>Twitter</h3>
+        <p>@ZonaGamerOfficial</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">📱</div>
+        <h3>Discord</h3>
+        <p>@ZonaGamer#1234</p>
+      </div>
+    </div>
+    <form class="contact-form" action="#" method="POST">
+      <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input
+          type="text"
+          name="nombre"
+          id="nombre"
+          placeholder="Nombre"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="tu@email.com"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="subject">Asunto</label>
+        <select id="subject" name="subject" required>
+          <option value="" disabled selected>Selecciona un tema</option>
+          <option value="colaboracion">Colaboración</option>
+          <option value="sugerencia">Sugerencia</option>
+          <option value="error">Reportar Error</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Mensaje</label>
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Escribe tu mensaje aquí..."
+          rows="5"
+          required
+        ></textarea>
+      </div>
+      <button type="submit" class="btn-enviar">
+        <span>Enviar</span>
+        <span class="btn-icon">🚀</span>
+      </button>
+    </form>
+  </div>
+</section>
