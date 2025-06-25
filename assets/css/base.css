@@ -93,6 +93,17 @@ body {
   font-size: 0.9rem;
 }
 
+.btn-primary {
+  background: var(--gradient-primary);
+  color: var(--text-primary);
+  box-shadow: 0 0 20px rgba(255, 69, 0, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 25px rgba(255, 69, 0, 0.5);
+}
+
 .btn-secondary {
   background: var(--gradient-secondary);
   color: var(--text-primary);
@@ -154,6 +165,12 @@ body {
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
 }
 
 .section-header {
